@@ -28,7 +28,7 @@ func main() {
 	users := api.Group(("/users"))
 
 	users.GET("/:size", GetUsers)
-	users.POST("/insertUser", InsertUser)
+	users.POST("/add", InsertUser)
 	users.DELETE("/:uid/delete", DeleteUser)
 	users.PUT("/:uid/update", UpdateUser)
 	router.Run()
